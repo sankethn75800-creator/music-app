@@ -25,17 +25,17 @@ function App() {
   const audioRef = useRef(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/songs')
+    fetch('https://music-app-cvgl.onrender.com/api/songs')
       .then(res => res.json())
       .then(data => setSongs(data));
   }, []);
 
   useEffect(() => {
     if (userEmail) {
-      fetch(`http://localhost:5000/api/likes/${userEmail}`)
+      fetch(`https://music-app-cvgl.onrender.com/api/likes/${userEmail}`)
         .then(res => res.json())
         .then(data => setLikedSongs(data));
-      fetch(`http://localhost:5000/api/playlists/${userEmail}`)
+      fetch(`https://music-app-cvgl.onrender.com/api/playlists/${userEmail}`)
         .then(res => res.json())
         .then(data => setPlaylists(data));
     }
@@ -106,7 +106,7 @@ function App() {
   };
 
   const toggleLike = async (songId) => {
-    const res = await fetch('http://localhost:5000/api/likes/toggle', {
+    const res = await fetch('https://music-app-cvgl.onrender.com/api/likes/toggle', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: userEmail, songId })
@@ -117,7 +117,7 @@ function App() {
 
   const createPlaylist = async () => {
     if (!newPlaylistName) return;
-    const res = await fetch('http://localhost:5000/api/playlists/create', {
+    const res = await fetch('https://music-app-cvgl.onrender.com/api/playlists/create', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: userEmail, name: newPlaylistName })
@@ -129,7 +129,7 @@ function App() {
   };
 
   const addToPlaylist = async (playlistId, songId) => {
-    const res = await fetch('http://localhost:5000/api/playlists/add-song', {
+    const res = await fetch('https://music-app-cvgl.onrender.com/api/playlists/add-song', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: userEmail, playlistId, songId })
@@ -141,7 +141,7 @@ function App() {
   };
 
   const deletePlaylist = async (playlistId) => {
-    const res = await fetch(`http://localhost:5000/api/playlists/${userEmail}/${playlistId}`, {
+    const res = await fetch(`https://music-app-cvgl.onrender.com/api/playlists/${userEmail}/${playlistId}`, {
       method: 'DELETE'
     });
     const data = await res.json();
