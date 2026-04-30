@@ -27,24 +27,24 @@ const songs = [
     title: "Aaya Sher", 
     artist: "Anirudh Ravichander", 
     duration: "3:45",
-    url: "http://localhost:5000/uploads/aaya.mp3",
-    image: "http://localhost:5000/uploads/aaya.jpg"
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/aaya_yxzz5p.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/aaya_vzjx90.jpg"
   },
   { 
     id: 2, 
     title: "Are Bommale", 
     artist: "Rzee", 
     duration: "4:20",
-    url: "http://localhost:5000/uploads/bommale.mp3",
-    image: "http://localhost:5000/uploads/bommale.jpg"
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/bommale_wubwyi.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/bommale_rxuaul.jpg"
   },
   { 
     id: 3, 
     title: "Paravashanadenu", 
     artist: "Puneeth Rajkumar", 
     duration: "2:55",
-    url: "http://localhost:5000/uploads/paravasha.mp3",
-    image: "http://localhost:5000/uploads/paravasha.jpg"
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/paravasha_nu2dsn.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/paravasha_gqwyud.jpg"
   },
 ];
 
@@ -91,13 +91,11 @@ const savePlaylists = (playlists) => {
   fs.writeFileSync(playlistsFile, JSON.stringify(playlists, null, 2));
 };
 
-// Get playlists for user
 app.get('/api/playlists/:email', (req, res) => {
   const playlists = getPlaylists();
   res.json(playlists[req.params.email] || []);
 });
 
-// Create playlist
 app.post('/api/playlists/create', (req, res) => {
   const { email, name } = req.body;
   const playlists = getPlaylists();
@@ -108,7 +106,6 @@ app.post('/api/playlists/create', (req, res) => {
   res.json(playlists[email]);
 });
 
-// Add song to playlist
 app.post('/api/playlists/add-song', (req, res) => {
   const { email, playlistId, songId } = req.body;
   const playlists = getPlaylists();
@@ -122,7 +119,6 @@ app.post('/api/playlists/add-song', (req, res) => {
   res.json(playlists[email]);
 });
 
-// Delete playlist
 app.delete('/api/playlists/:email/:playlistId', (req, res) => {
   const { email, playlistId } = req.params;
   const playlists = getPlaylists();
