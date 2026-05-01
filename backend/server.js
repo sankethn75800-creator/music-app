@@ -46,6 +46,46 @@ const songs = [
     url: "https://res.cloudinary.com/dtitbzklp/video/upload/paravasha_nu2dsn.mp3",
     image: "https://res.cloudinary.com/dtitbzklp/image/upload/paravasha_gqwyud.jpg"
   },
+  { 
+    id: 4, 
+    title: "Believer", 
+    artist: "Imagine Dragons", 
+    duration: "3:24",
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/Believer_Song_by_Imagine_Dragons_efjcop.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/beliver_q48jhq.jpg"
+  },
+  { 
+    id: 5, 
+    title: "I Wanna Be Yours", 
+    artist: "Arctic Monkeys", 
+    duration: "3:03",
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/I_Wanna_Be_Yours_Song_by_Arctic_Monkeys_xqr0ar.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/wanna_be_y_hhwaun.jpg"
+  },
+  { 
+    id: 6, 
+    title: "Katheyonda Helide", 
+    artist: "B. Ajaneesh Loknath, Rakshit Shetty", 
+    duration: "4:15",
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/Katheyonda_Helide_Song_by_B._Ajaneesh_Loknath_Rakshit_Shetty_and_Varun_Ramachandra_xvgrzl.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/katheyondh_g1swyt.jpg"
+  },
+  { 
+    id: 7, 
+    title: "Naane Neenanthe", 
+    artist: "Lahari Mahesh, Sid Sriram", 
+    duration: "4:30",
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/Naane_NeenantheSong_byLahari_Mahesh_and_Sid_Sriram_lee3xt.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/nane_neenanthe_teqvxw.jpg"
+  },
+  { 
+    id: 8, 
+    title: "Pavazha Malli", 
+    artist: "Sai Abhyankkar, Shruti Haasan", 
+    duration: "3:50",
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/Pavazha_Malli_Song_by_Sai_Abhyankkar_Shruti_Haasan_and_Vivek_Velmurugan_mqpsgy.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/pavazha_q3xzvr.jpg"
+  },
 ];
 
 app.get('/api/songs', (req, res) => {
