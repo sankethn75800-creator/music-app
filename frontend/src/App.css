@@ -456,6 +456,41 @@ body {
   box-shadow: 0 8px 25px rgba(29, 185, 84, 0.6);
 }
 
+/* Created By Footer Badge */
+.app-footer {
+  position: fixed;
+  bottom: 95px;
+  right: 20px;
+  font-size: 12px;
+  color: #1db954;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  z-index: 50;
+  border: 1px solid rgba(29, 185, 84, 0.4);
+  box-shadow: 0 4px 15px rgba(29, 185, 84, 0.2);
+  transition: all 0.3s ease;
+}
+
+.app-footer:hover {
+  background: rgba(29, 185, 84, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(29, 185, 84, 0.4);
+}
+
+/* Sidebar Bottom Created By */
+.sidebar-credit {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 11px;
+  color: #1db954;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  font-weight: 600;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
