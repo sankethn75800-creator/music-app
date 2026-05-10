@@ -86,6 +86,54 @@ const songs = [
     url: "https://res.cloudinary.com/dtitbzklp/video/upload/Pavazha_Malli_Song_by_Sai_Abhyankkar_Shruti_Haasan_and_Vivek_Velmurugan_mqpsgy.mp3",
     image: "https://res.cloudinary.com/dtitbzklp/image/upload/pavazha_q3xzvr.jpg"
   },
+  { 
+    id: 9, 
+    title: "Bombe Helutaithe", 
+    artist: "Puneeth Rajkumar, V. Harikrishna", 
+    duration: "5:09",
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/RAAJAKUMARA_BOMBE_HELUTAITHE_PUNEETH_RAJKUMAR_V_HARIKRISHNA_SANTOSH_HOMBALE_FILMS_mh4iup.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/Screenshot_2026-05-10_111157_fzixmh.png"
+  },
+  { 
+    id: 10, 
+    title: "Last Benchu Party", 
+    artist: "B. Ajaneesh Loknath", 
+    duration: "6:42",
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/Last_Benchu_Party_-_Video_Song_Kirik_Party_B._Ajaneesh_Loknath_Rakshit_Shetty_Rishab_Shetty_bebtm8.mp3",
+    image: "https://via.placeholder.com/150/1db954/ffffff?text=Kirik+Party"
+  },
+  { 
+    id: 11, 
+    title: "Yeno Yeno Aagide", 
+    artist: "Yash, Kriti Kharbhanda", 
+    duration: "4:40",
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/Googly_-_Yeno_Yeno_Aagide_Full_Song_Video_Yash_Kriti_Kharbhanda_izqijx.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/yeno_yeno_agidhe_k2gpvl.jpg"
+  },
+  { 
+    id: 12, 
+    title: "Mayavi", 
+    artist: "Sonu Nigam, Sanjith Hegde", 
+    duration: "4:26",
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/Mayavi_Sonu_Nigam_Sanjith_Hegde_Nagarjun_Sharma_Bhoomi_2024_Merchant_Records_s39895.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/Screenshot_2026-05-08_185424_zc0xx2.png"
+  },
+  { 
+    id: 13, 
+    title: "Mutta Kalakki", 
+    artist: "GV Prakash Kumar", 
+    duration: "2:49",
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/Mutta_Kalakki_Music_Video_Youth_Ken_Karunaas_Suraj_Venjaramoodu_GV_Prakash_Kumar_qtlwi6.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/mutta_kalakki_qujq2m.jpg"
+  },
+  { 
+    id: 14, 
+    title: "Madana Mana Mohini", 
+    artist: "Vijay Prakash", 
+    duration: "3:42",
+    url: "https://res.cloudinary.com/dtitbzklp/video/upload/Madana_Mana_Mohini_Kannada_Video_Song_-_Kantara_Chapter_1_Rishab_Shetty_Rukmini_Hombale_Films_raux7y.mp3",
+    image: "https://res.cloudinary.com/dtitbzklp/image/upload/madana_mana_mohini_irunyq.jpg"
+  },
 ];
 
 app.get('/api/songs', (req, res) => {
